@@ -7,7 +7,9 @@
     "start": "astro dev",
     "build": "astro check && astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "fmt": "prettier --write .",
+    "fmt.check": "prettier --check ."
   },
   "dependencies": {
     "@astrojs/check": "^0.8.2",
@@ -21,6 +23,8 @@
     "commitizen": "^4.3.0",
     "cz-conventional-changelog": "^3.3.0",
     "husky": "^9.1.1",
-    "lint-staged": "^15.2.7"
+    "lint-staged": "^15.2.7",
+    "prettier": "^3.3.3",
+    "prettier-plugin-css-order": "^2.1.2"
   }
 }

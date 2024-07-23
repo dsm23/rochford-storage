@@ -1,20 +1,12 @@
 ---
+import Layout from "~/components/layout/index.astro";
 import Map from "~/components/Map.vue";
-
-import "~/styles.css";
 ---
 
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width" />
-    <meta name="generator" content={Astro.generator} />
-    <title>Rochford Storage</title>
-  </head>
-  <body>
+<Layout title="Rochford Storage">
+  <main class="container">
     <h1>Rochford Storage</h1>
 
     <Map client:only="vue" />
-  </body>
-</html>
+  </main>
+</Layout>

@@ -1,5 +1,7 @@
 ---
+import Map from "../components/Map.vue";
 
+import "../styles.css";
 ---
 
 <html lang="en">
@@ -12,5 +14,7 @@
   </head>
   <body>
     <h1>Rochford Storage</h1>
+
+    <Map client:only="vue" />
   </body>
 </html>

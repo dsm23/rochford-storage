@@ -1,12 +1,12 @@
 ---
 import Layout from "~/components/layout/index.astro";
-import Map from "~/components/Map.vue";
+import Map from "~/components/map";
 ---
 
 <Layout title="Rochford Storage">
   <main class="container">
     <h1>Rochford Storage</h1>
 
-    <Map client:only="vue" />
+    <Map client:only="react" />
   </main>
 </Layout>

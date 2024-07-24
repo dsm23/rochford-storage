@@ -10,7 +10,8 @@
     "astro": "astro",
     "playwright": "playwright",
     "fmt": "prettier --write .",
-    "fmt.check": "prettier --check ."
+    "fmt.check": "prettier --check .",
+    "lint": "eslint \"src/**/*.{js,jsx,ts,tsx,vue,astro,svelte}\" --report-unused-disable-directives --max-warnings 0"
   },
   "dependencies": {
     "@astrojs/check": "^0.8.2",
@@ -20,25 +21,32 @@
     "leaflet": "^1.9.4",
     "leaflet.fullscreen": "^3.0.2",
     "tailwindcss": "^3.4.6",
-    "typescript": "^5.5.3",
     "vue": "^3.4.33"
   },
   "devDependencies": {
     "@commitlint/cli": "^19.3.0",
     "@commitlint/config-conventional": "^19.2.2",
     "@commitlint/types": "^19.0.3",
+    "@eslint/js": "^9.7.0",
     "@playwright/test": "^1.45.2",
     "@tailwindcss/typography": "^0.5.13",
+    "@types/eslint__js": "^8.42.3",
     "@types/leaflet": "^1.9.12",
     "@types/leaflet.fullscreen": "^3.0.2",
     "@types/node": "^20.14.11",
+    "@typescript-eslint/parser": "^7.17.0",
     "commitizen": "^4.3.0",
     "cz-conventional-changelog": "^3.3.0",
+    "eslint": "^9.7.0",
+    "eslint-plugin-astro": "^1.2.3",
+    "eslint-plugin-jsx-a11y": "^6.9.0",
     "husky": "^9.1.1",
     "lint-staged": "^15.2.7",
     "prettier": "^3.3.3",
     "prettier-plugin-astro": "^0.14.1",
     "prettier-plugin-css-order": "^2.1.2",
-    "prettier-plugin-tailwindcss": "^0.6.5"
+    "prettier-plugin-tailwindcss": "^0.6.5",
+    "typescript": "^5.5.3",
+    "typescript-eslint": "^7.17.0"
   }
 }

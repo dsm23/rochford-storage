@@ -4,7 +4,7 @@
   "version": "0.0.1",
   "scripts": {
     "prepare": "husky",
-    "dev": "astro dev",
+    "dev": "sst bind astro dev",
     "start": "astro dev",
     "build": "astro check && astro build",
     "preview": "astro preview",
@@ -12,7 +12,9 @@
     "playwright": "playwright",
     "fmt": "prettier --write .",
     "fmt.check": "prettier --check .",
-    "lint": "eslint \"src/**/*.{js,jsx,ts,tsx,vue,astro,svelte}\" --report-unused-disable-directives --max-warnings 0"
+    "lint": "eslint \"src/**/*.{js,jsx,ts,tsx,vue,astro,svelte}\" --report-unused-disable-directives --max-warnings 0",
+    "sst:deploy": "sst deploy",
+    "sst:dev": "sst dev"
   },
   "dependencies": {
     "@astrojs/check": "^0.8.3",
@@ -45,7 +47,10 @@
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
     "@typescript-eslint/parser": "^7.17.0",
+    "astro-sst": "^2.43.4",
+    "aws-cdk-lib": "2.142.1",
     "commitizen": "^4.3.0",
+    "constructs": "10.3.0",
     "cz-conventional-changelog": "^3.3.0",
     "eslint": "^9.7.0",
     "eslint-plugin-astro": "^1.2.3",
@@ -56,6 +61,7 @@
     "prettier-plugin-astro": "^0.14.1",
     "prettier-plugin-css-order": "^2.1.2",
     "prettier-plugin-tailwindcss": "^0.6.5",
+    "sst": "^2.43.4",
     "tailwindcss": "^3.4.7",
     "tailwindcss-animate": "^1.0.7",
     "typescript": "^5.5.4",

@@ -8,7 +8,10 @@ import {
 const routes = [
   layout("./layout.tsx", [
     index("./routes/home/index.tsx"),
-    route("placeholder", "./routes/placeholder/index.tsx"),
+    route("contact", "./routes/contact/index.tsx"),
+    route("accessibility", "./routes/accessibility/index.tsx"),
+    route("privacy-policy", "./routes/privacy/index.tsx"),
+    route("cookie-settings", "./routes/cookies/index.tsx"),
   ]),
 ] satisfies RouteConfig;
 

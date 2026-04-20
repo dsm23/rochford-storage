@@ -6,6 +6,8 @@ const buttonVariants = cva(
     variants: {
       variant: {
         default: "bg-primary text-primary-foreground [a]:hover:bg-primary/80",
+        "hero-default":
+          "h-[unset] rounded-none bg-green-800 px-10 py-4 font-bold tracking-widest text-background uppercase transition-colors hover:brightness-110 dark:bg-green-300",
         outline:
           "border-border bg-background hover:bg-muted hover:text-foreground aria-expanded:bg-muted aria-expanded:text-foreground dark:border-input dark:bg-input/30 dark:hover:bg-input/50",
         secondary:

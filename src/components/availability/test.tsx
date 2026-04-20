@@ -4,7 +4,7 @@ import { render } from "~/test-utils/render";
 import Availability from ".";
 
 describe("component", () => {
-  describe("Footer", () => {
+  describe("Availability", () => {
     it("should render correctly", () => {
       render(<Availability id="availability" aria-label="Current Capacity" />);
 

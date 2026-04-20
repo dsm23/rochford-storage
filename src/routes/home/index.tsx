@@ -1,6 +1,7 @@
 import type { FunctionComponent } from "react";
 import Availability from "~/components/availability";
 import Hero from "~/components/hero";
+import Location from "~/components/location";
 
 const Home: FunctionComponent = () => (
   <main>
@@ -12,6 +13,7 @@ const Home: FunctionComponent = () => (
       occupied={1}
       aria-label="Current Capacity"
     />
+    <Location />
   </main>
 );
 

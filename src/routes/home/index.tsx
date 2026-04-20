@@ -1,4 +1,5 @@
 import type { FunctionComponent } from "react";
+import Availability from "~/components/availability";
 import { buttonVariants } from "~/components/ui/button";
 
 const LP_GRID_ITEMS = [
@@ -487,6 +488,12 @@ const Home: FunctionComponent = () => (
         </div>
       </div>
     </section>
+    <Availability
+      id="availability"
+      capacity={4}
+      occupied={1}
+      aria-label="Current Capacity"
+    />
   </main>
 );
 

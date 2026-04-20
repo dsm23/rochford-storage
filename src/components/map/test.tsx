@@ -1,12 +1,11 @@
 import { describe, expect, it } from "vitest";
-import { MemoryRouter } from "react-router";
 import { render } from "~/test-utils/render";
-import Home from ".";
+import Map from ".";
 
 describe("component", () => {
-  describe("Home", () => {
+  describe("Map", () => {
     it("should render correctly", () => {
-      const { container } = render(<Home />, { wrapper: MemoryRouter });
+      const { container } = render(<Map />);
 
       expect(container.firstChild).toBeTruthy();
     });

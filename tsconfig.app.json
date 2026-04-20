@@ -6,7 +6,7 @@
     "useDefineForClassFields": true,
     "lib": ["ESNext", "DOM", "DOM.Iterable"],
     "module": "ESNext",
-    "types": ["vite/client"],
+    "types": ["vite/client", "leaflet"],
     "skipLibCheck": true,
 
     /* Bundler mode */

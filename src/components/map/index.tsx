@@ -48,9 +48,9 @@ const Map = () => {
 
       map.addControl(fullScreenControl);
 
-      tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
+      tileLayer(`${window.location.origin}/map-tiles/{z}/{x}/{y}.png`, {
         attribution:
-          '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+          '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, map style <a href="https://www.thunderforest.com">Thunderforest</a>',
       }).addTo(map);
 
       marker(latlng, { icon: customIcon })

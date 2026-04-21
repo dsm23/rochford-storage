@@ -3,8 +3,8 @@ interface ViteTypeOptions {
 }
 
 interface ImportMetaEnv {
-  readonly SWETRIX_API_URL: string;
-  readonly SWETRIX_PROJECT_ID: string;
+  readonly VITE_SWETRIX_API_URL: string;
+  readonly VITE_SWETRIX_PROJECT_ID: string;
 }
 
 interface ImportMeta {

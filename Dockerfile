@@ -28,6 +28,9 @@ FROM base AS builder
 
 WORKDIR /app
 
+ARG VITE_SWETRIX_API_URL
+ARG VITE_SWETRIX_PROJECT_ID
+
 COPY --from=deps /app/node_modules ./node_modules
 COPY . .
 

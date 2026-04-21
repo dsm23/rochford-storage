@@ -12,8 +12,8 @@ import type { Route } from "./+types/root";
 
 import "./index.css";
 
-init(import.meta.env.SWETRIX_PROJECT_ID, {
-  apiURL: import.meta.env.SWETRIX_API_URL,
+init(import.meta.env.VITE_SWETRIX_PROJECT_ID, {
+  apiURL: import.meta.env.VITE_SWETRIX_API_URL,
 });
 
 await trackViews();

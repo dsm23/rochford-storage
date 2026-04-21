@@ -7,9 +7,16 @@ import {
   Scripts,
   ScrollRestoration,
 } from "react-router";
+import { init, trackViews } from "swetrix";
 import type { Route } from "./+types/root";
 
 import "./index.css";
+
+init(import.meta.env.SWETRIX_PROJECT_ID, {
+  apiURL: import.meta.env.SWETRIX_API_URL,
+});
+
+await trackViews();
 
 export function Layout({ children }: { children: ReactNode }) {
   return (
